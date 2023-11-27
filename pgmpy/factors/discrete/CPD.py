@@ -300,7 +300,7 @@ class TabularCPD(DiscreteFactor):
         with open(filename, "w") as f:
             writer = csv.writer(f)
             writer.writerows(self._make_table_str(tablefmt="grid", return_list=True))
-        return writer
+       
 
     def copy(self):
         """
